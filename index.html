@@ -160,8 +160,10 @@
         <h3 class="title is-4">Dataset Link</h3>
         <div class="content has-text-justified">
           <p>
-            The dataset can be accessed on Kaggle: 
-            \url{https://www.kaggle.com/datasets/reihanenamdari/breast-cancer/data}{Breast Cancer Dataset}. The file used in this project is named \texttt{Breast\_Cancer.csv}.
+            The dataset can be accessed on 
+            <a href="https://www.kaggle.com/datasets/reihanenamdari/breast-cancer/data">Kaggle
+            </a>.
+            The file used in this project is named <strong>Breast_Cancer.csv</strong>.
           </p>
         </div>
       </div>
@@ -179,6 +181,81 @@
       </div>
     </div>
     <!--/ Paper video. -->
+
+    <!-- Problem Definition -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Problem Definition</h2>
+        <h3 class="title is-4">Problem</h3>
+        <div class="content has-text-justified">
+          <p>
+            The primary challenge is to accurately classify breast tumors as malignant or benign using patient medical records and tumor characteristics. This prediction is crucial for early diagnosis and effective treatment planning.
+          </p>
+        </div>
+        <h3 class="title is-4">Motivation</h3>
+        <div class="content has-text-justified">
+          <p>
+            Early and precise identification of malignant tumors can significantly improve patient outcomes, guiding timely and appropriate medical interventions. 
+            The development of an accurate predictive model can assist healthcare professionals in making informed decisions, ultimately enhancing patient care and survival rates.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Problem Definition. -->
+
+    <!-- Methods -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Methods</h2>
+        <h3 class="title is-4">Data Preprocessing Methods</h3>
+        <div class="content has-text-justified">
+          <ul>
+              <li>
+                  <span class="bold">Feature Selection:</span> Identify and retain relevant features for predicting tumor malignancy, such as age, race, marital status, T stage, N stage, differentiation, grade, A stage, and tumor size.
+              </li>
+              <li>
+                  <span class="bold">Handling Missing Values:</span> Use imputation techniques to handle any missing data.
+              </li>
+              <li>
+                  <span class="bold">Feature Scaling:</span> Apply MinMaxScaler to normalize feature values for consistent model training.
+              </li>
+          </ul>
+        </div>
+        <h3 class="title is-4">ML Algorithms/Models</h3>
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+                <span class="bold">CatBoost Classifier:</span> Known for handling categorical data effectively and providing robust performance.
+            </li>
+            <li>
+                <span class="bold">Gradient Boosting Classifier:</span> An ensemble method that builds models sequentially to minimize errors.
+            </li>
+            <li>
+                <span class="bold">AdaBoost Classifier:</span> Focuses on difficult cases by adjusting weights, enhancing recall for malignant tumors.
+            </li>
+            <li>
+                <span class="bold">Random Forest Classifier:</span> An ensemble method that builds multiple decision trees to improve accuracy and control overfitting.
+            </li>
+            <li>
+                <span class="bold">Support Vector Machine (SVM):</span> Effective in high-dimensional spaces and for binary classification.
+            </li>
+          </ul>
+        </div>
+        <h3 class="title is-4">CS 7641 Learning Methods</h3>
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+              <span class="bold">Supervised Learning:</span> Primary method, focusing on classification of tumor malignancy.
+            </li>
+            <li>
+              <span class="bold">Unsupervised Learning:</span> Exploratory analysis to identify patterns and relationships within the data.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--/ Methods. -->
+    
   </div>
 </section>
 
