@@ -130,6 +130,17 @@
 
 <section class="section">
   <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+    
     <!-- Introduction/Background -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -140,12 +151,12 @@
             Breast cancer is one of the most prevalent cancers affecting women worldwide. 
             Accurate prediction of tumor malignancy can significantly enhance diagnosis and treatment planning. 
             Previous studies have leveraged machine learning (ML) algorithms to improve malignancy prediction, demonstrating the potential of ML to surpass traditional statistical methods in accuracy and reliability.
-            For instance, a study by Lu and Liu \cite{LuLiu} explored various ML models, such as K-Nearest Neighbors and Gradient Boosting Models, to predict breast cancer survivability. 
+            For instance, a study by Lu and Liu [1] explored various ML models, such as K-Nearest Neighbors and Gradient Boosting Models, to predict breast cancer survivability. 
             Their results highlighted the importance of integrating clinical features with molecular data to improve prediction accuracy.
           </p>
           <p>
-            Additionally, research has shown that molecular diagnostics can complement traditional clinical tools, potentially enhancing the accuracy of breast cancer prognosis \cite{Curtis}. 
-            However, there is still no consensus on the most effective computational methods for predicting breast cancer outcomes, emphasizing the need for further exploration in this area \cite{Paik}.
+            Additionally, research has shown that molecular diagnostics can complement traditional clinical tools, potentially enhancing the accuracy of breast cancer prognosis [2]. 
+            However, there is still no consensus on the most effective computational methods for predicting breast cancer outcomes, emphasizing the need for further exploration in this area [3].
           </p>
         </div>
         <h3 class="title is-4">Dataset Description</h3>
@@ -169,18 +180,6 @@
       </div>
     </div>
     <!--/ Introduction/Background. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
 
     <!-- Problem Definition -->
     <div class="columns is-centered has-text-centered">
@@ -255,7 +254,83 @@
       </div>
     </div>
     <!--/ Methods. -->
+
+    <!-- (Potential) Results and Discussion -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">(Potential) Results and Discussion</h2>
+        <h3 class="title is-4">Quantitative Metrics</h3>
+        <div class="content has-text-justified">
+          <ul>
+            <li>
+                <span class="bold">Accuracy:</span> Measure of overall correctness of the model.
+            </li>
+            <li>
+                <span class="bold">Precision:</span> Measure of the model's ability to correctly identify malignant tumors.
+            </li>
+            <li>
+                <span class="bold">Recall:</span> Measure of the model's ability to detect all malignant tumors.
+            </li>
+            <li>
+                <span class="bold">F1-Score:</span> Harmonic mean of precision and recall, providing a balance between the two.
+            </li>
+            <li>
+                <span class="bold">ROC-AUC:</span> Area under the receiver operating characteristic curve, evaluating model performance across all classification thresholds.
+            </li>
+          </ul>
+        </div>
+        <h3 class="title is-4">Project Goals</h3>
+        <div class="content has-text-justified">
+            <ul>
+                <li>
+                    Achieve high accuracy, precision, recall, and F1-score.
+                </li>
+                <li>
+                    Identify the most influential features for predicting tumor malignancy.
+                </li>
+                <li>
+                    Develop a robust and reliable predictive model for clinical use.
+                </li>
+            </ul>
+        </div>
     
+        <h3 class="title is-4">Expected Results</h3>
+        <div class="content has-text-justified">
+            <ul>
+                <li>
+                    A machine learning model capable of accurately predicting the malignancy of breast cancer tumors.
+                </li>
+                <li>
+                    Insights into key features influencing malignancy, aiding healthcare professionals in diagnosis and treatment planning.
+                </li>
+                <li>
+                    Potential for early detection of malignant tumors, improving patient outcomes and survival rates.
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <!--/ (Potential) Results and Discussion. -->
+
+    <!-- References -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">References</h2>
+          <ol>
+            <li>
+                C. Lu and J. Liu, ”Breast Cancer Prognosis,” Stanford University, 2012. Available: https://cs229.stanford.edu/projects2012.html.
+            </li>
+            <li>
+                C. Curtis et al., ”The genomic and transcriptomic architecture of 2,000 breast tumours reveals novel subgroups,” Nature, 2012.
+            </li>
+            <li>
+                S. Paik et al., ”A multigene assay to predict recurrence of tamoxifen-treated, node-negative breast cancer,” N. Engl. J. Med., vol. 351, no. 27, pp. 2817-2826, Dec. 2004.
+            </li>
+            <!-- Add more references as needed -->
+        </ol>
+      </div>
+    </div>
+    <!--/ References. -->
   </div>
 </section>
 
