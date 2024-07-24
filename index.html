@@ -338,6 +338,64 @@ print("Feature Scaling Completed")
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Results and Discussion</h2>
+        <h3 class="title is-4">Dataset analysis with K-Means</h3>
+        <div class="content has-text-justified">
+          <p>
+            First, Elbow Method graph is utilized to choose the optimal number of clusters, which is 4.
+          </p>
+          <div class="figure">
+            <img src="static/images/elbow.png" alt="Elbow Method For Optimal Number of Clusters">
+            <div class="figure-caption">Figure 1: Elbow Method For Optimal Number of Clusters</div>
+          </div>
+          <p>
+            Next, we applied K-Means clustering with 4 clusters to the full dataset, analyzed the characteristics of each cluster, and visualized the results using PCA with 2 principle components.
+          </p>
+          <div class="figure">
+            <img src="static/images/kmeans.png" alt="K-Means Clustering with 4 Clusters">
+            <div class="figure-caption">Figure 2: K-Means Clustering with 4 Clusters</div>
+          </div>
+          <p>
+            Then we analyzed the Characteristics for each cluster:
+          </p>
+          <ul>
+            <li>
+                <span class="bold">Cluster 0:</span>
+                <li>Mean Age: 53.8</li>
+                <li>Higher proportion of well to moderately differentiated tumors.</li>
+                <li>High mean survival months (73.6).</li>
+                <li>Lower survival status (9.95\% not survived).</li>
+            </li>
+            <li>
+                <span class="bold">Cluster 1:</span>
+                <li>Mean Age: 51.9</li>
+                <li>Higher tumor stage and lymph node involvement.</li>
+                <li>Moderately differentiated tumors.</li>
+                <li>Lower mean survival months (60.2).</li>
+                <li>Higher survival status (40.4\% not survived).</li>
+            </li>
+            <li>
+                <span class="bold">Cluster 2:</span>
+                <li>Mean Age: 55.2</li>
+                <li>Higher proportion of poorly differentiated tumors.</li>
+                <li>Moderately high mean survival months (73.9).</li>
+                <li>Higher survival status (5.7\% not survived).</li>
+            </li>
+            <li>
+                <span class="bold">Cluster 3:</span>
+                <li>Mean Age: 54.1</li>
+                <li>Higher tumor stage and lymph node involvement.</li>
+                <li>Moderately differentiated tumors.</li>
+                <li>Moderate mean survival months (68.5).</li>
+                <li>Higher survival status (23.5\% not survived).</li>
+            </li>
+            <p>
+              The clusters are distinct, with each cluster representing different patient profiles based on age, tumor characteristics, and survival outcomes. Clusters 1 and 3 have a higher proportion of patients with advanced tumor stages and lymph node involvement, resulting in lower survival rates. Clusters 0 and 2 show better differentiation and higher survival rates, indicating less aggressive cancer types.
+              
+              Clusters with higher survival rates and better differentiation can be targeted for less aggressive treatments. On the other hand, clusters with lower survival rates and higher tumor stages may benefit from more intensive treatment and monitoring.
+            </p>
+
+          </ul>
+        </div>
         <h3 class="title is-4">Quantitative Metrics</h3>
         <div class="content has-text-justified">
           <ul>
@@ -359,7 +417,7 @@ print("Feature Scaling Completed")
           </ul>
           <div class="figure">
             <img src="static/images/confusion_matrix.png" alt="Confusion Matrix for Random Forest Classifier">
-            <div class="figure-caption">Figure 1: Confusion Matrix for Random Forest Classifier</div>
+            <div class="figure-caption">Figure 3: Confusion Matrix for Random Forest Classifier</div>
           </div>
         </div>
 
@@ -392,11 +450,11 @@ print("Feature Scaling Completed")
         <h3 class="title is-4">Visualization</h3>
         <div class="content has-text-justified">
            <p>
-             Figure 2 shows the visualization for the ROC-AUC curve for Random Forest Classifier.
+             Figure 4 shows the visualization for the ROC-AUC curve for Random Forest Classifier.
            </p>
            <div class="figure">
             <img src="static/images/roc_curve.png" alt="ROC-AUC Curve for Random Forest Classifier">
-            <div class="figure-caption">Figure 2: ROC-AUC Curve for Random Forest Classifier</div>
+            <div class="figure-caption">Figure 4: ROC-AUC Curve for Random Forest Classifier</div>
            </div>
         </div>
         
@@ -405,27 +463,6 @@ print("Feature Scaling Completed")
            <p>
              The Random Forest Classifier showed the best overall performance among the models evaluated, with a high accuracy of 91.35%, a balanced F1-Score of 63.60%, and the highest ROC-AUC score of 75.41%. This indicates that the Random Forest model is robust and effective in predicting breast cancer tumor malignancy. 
            </p>
-        </div>
-
-        <h3 class="title is-4">Next Steps</h3>
-        <div class="content has-text-justified">
-          <ul>
-            <li>
-                <span class="bold">Hyperparameter Tuning:</span> Further improve the model performance by tuning hyperparameters using Grid Search or Random Search.
-            </li>
-            <li>
-                <span class="bold">Feature Importance Analysis:</span> Identify the most influential features in predicting malignancy.
-            </li>
-            <li>
-                <span class="bold">Ensemble Methods:</span> Consider combining models to leverage their strengths and improve overall performance.
-            </li>
-            <li>
-                <span class="bold">Cross-Validation:</span> Use cross-validation to ensure the model's robustness and generalizability.
-            </li>
-            <li>
-                <span class="bold">Documentation and Reporting:</span> Document all findings, results, and next steps in your final report.
-            </li>
-          </ul>
         </div>
       </div>
     </div>
