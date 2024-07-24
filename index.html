@@ -311,6 +311,9 @@ print("Feature Scaling Completed")
             <li>
                 <span class="bold">Logistic Regression:</span> Logistic Regression is a simple yet effective algorithm for binary classification problems. It provides probabilities for classification outcomes and is interpretable, making it easier to understand the impact of each feature on the prediction. It was chosen as a baseline model to compare more complex algorithms against.
             </li>
+            <li>
+              <span class="bold">K-Means Clustering:</span> K-Means Clustering is a popular unsupervised learning algorithm used for partitioning a dataset into distinct groups, or clusters. It aims to minimize the variance within each cluster, making the data points in a cluster as similar as possible to each other. This algorithm is efficient for large datasets and is easy to implement, making it suitable for exploratory data analysis. It was chosen to identify hidden patterns and groupings in the dataset, providing insights into potential categories or segments within the data.
+            </li>
           </ul>
         </div>
         <h3 class="title is-4">Explanation of Methods and Model Selection</h3>
@@ -323,7 +326,7 @@ print("Feature Scaling Completed")
               <span class="bold">Data Preprocessing:</span> Data preprocessing steps were crucial in preparing the dataset for model training. Handling missing values ensured that no data points were lost, while outlier removal helped in maintaining the integrity of the statistical distribution of features. Feature encoding converted categorical variables into a numeric format suitable for machine learning algorithms. Finally, feature scaling was necessary to ensure that all features contributed equally during model training.
             </li>
             <li>
-              <span class="bold">Model Selection:</span> The models were chosen based on their strengths and suitability for the dataset characteristics: 1) Random Forest was selected for its robustness and ability to handle large datasets with numerous features. 2) Logistic Regression was used as a baseline to provide a point of comparison for more complex models. 
+              <span class="bold">Model Selection:</span> The models were chosen based on their strengths and suitability for the dataset characteristics: 1) Random Forest was selected for its robustness and ability to handle large datasets with numerous features. 2) Logistic Regression was used as a baseline to provide a point of comparison for more complex models. 3) K-Means Clustering was used to identify and analyze inherent groupings within the data, providing insights into natural clusters and patterns.
             </li>
           </ul>
         </div>
